@@ -1,10 +1,22 @@
 <% @tweets.each do |tweet| %>
-<div class = "contents">
-    <div class = "contents-post">
-      <p><%= tweet.text%></p>
-      <span class = "name">
-        <%= tweet.name %>
-      </span>
+  <div class = "contents-oya">
+    <div class = "contents-center">
+    <div class = "contents-name-date">
+      <div class = "contents-name">
+        <%= tweet.name%>
+      </div>
+      <div class = "contents-date">
+    <span data-livestamp="<%=tweet.updated_at.strftime("%Y/%m/%d %H:%M %Z")%>"></span>
+      </div>
+    </div>
+      <div class = "contents-post">
+        <%= tweet.text%>
+      </div>
+    <div class = "contents-side">
+      <div class = "contents-side-left">
+      </div>
+      <div class = "contents-side-right">
+      </div>
     </div>
 </div>
 <% end %>

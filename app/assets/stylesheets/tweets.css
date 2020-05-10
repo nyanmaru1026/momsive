@@ -1,0 +1,79 @@
+.header{
+  height: 70px;
+  width: 100vw;
+  background-color: aqua;
+}
+
+.header-upper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-upper-title{
+  margin-left: 20px;
+  line-height: 70px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 30px;
+  color: white;
+}
+
+.header-upper-post{
+  margin-right: 20px;
+  line-height: 70px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 30px;
+}
+
+.header-upper-title a{
+  text-decoration: none;
+  color: white;
+}
+
+.header-upper-post a{
+  text-decoration: none;
+  color: white;
+}
+
+.contents{
+  position: relative;
+}
+
+.contents-name-date{
+  position: absolute;
+  display: flex;
+  margin-left: 220px;
+}
+
+.contents-name{
+  font-weight: bold;
+}
+
+.contents-date{
+  margin-left: 20px;
+  color: gray;
+  font-size: 13px;
+}
+
+.contents-post{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 20px;
+}
+
+.contents-side{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.contents-side-left{
+  height: 100vh;
+  width: 200px;
+  background-color: #f6f6f6;
+}
+
+.contents-side-right{
+  height: 100vh;
+  width: 200px;
+  background-color: #f6f6f6;
+}
