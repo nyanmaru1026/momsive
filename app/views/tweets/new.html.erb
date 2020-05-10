@@ -1,0 +1,22 @@
+ <div class = "contents-center">
+   <div class = "contents-new">
+      <%= form_with(model: @tweet, local: true, class: "form") do |form| %>
+        <h3>
+          Tweet
+        </h3>
+        <%= form.text_field :name, placeholder: "Nickname" %>
+        <br>
+        <%= form.text_field :image, placeholder: "Image Url" %>
+        <br>
+        <%= form.text_area :text, placeholder: "text" , rows: "10" %>
+        <br>
+        <%= form.submit "SEND", id: "submit" %>
+      <% end %>
+   </div>
+    <div class = "contents-side">
+      <div class = "contents-side-left">
+      </div>
+      <div class = "contents-side-right">
+      </div>
+    </div>
+</div>
