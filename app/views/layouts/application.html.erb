@@ -7,13 +7,21 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/livestamp/1.1.0/livestamp.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class = "header">
       <div class = "header-upper">
-        <%= link_to "Momsive", "#"%>
-        <%= link_to "投稿する", "#"%>
+        <div class = "header-upper-title">
+          <%= link_to "Momsive", "#"%>
+        </div>
+        <div class = "header-upper-post">
+          <%= link_to "tweet", "#"%>
+        </div>
       </div>
     </div>
     <div class = "contents">
