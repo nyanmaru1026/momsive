@@ -120,3 +120,30 @@ h3{
   margin-left: 450px;
   margin-top: 30px;
 }
+
+.success{
+  position: absolute;
+}
+
+h2{
+  margin-left: 500px;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.btn{
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  margin-top: 30px;
+  margin-left: 570px;
+}
+
+.btn:hover {
+  background: #67c5ff;
+  color: white;
+}
