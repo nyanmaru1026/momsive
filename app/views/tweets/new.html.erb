@@ -6,7 +6,8 @@
         </h3>
         <%= form.text_field :name, placeholder: "Nickname" %>
         <br>
-        <%= form.text_field :image, placeholder: "Image Url" %>
+        <%= form.file_field :image %>
+        <i class="far fa-image"></i>
         <br>
         <%= form.text_area :text, placeholder: "text" , rows: "10" %>
         <br>
