@@ -8,6 +8,9 @@
     <span data-livestamp="<%=@tweet.updated_at.strftime("%Y/%m/%d %H:%M %Z")%>"></span>
       </div>
     </div>
+    <div class = "delete">
+     <%= link_to '削除', "/tweets/#{@tweet.id}", method: :delete %>
+     </div>
       <div class = "contents-post-show">
         <%= @tweet.text%>
         <br>

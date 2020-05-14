@@ -174,10 +174,39 @@ h2{
 .contents-post-show{
   position: absolute;
   margin-left: 550px;
-  margin-top: 50px;
+  margin-top: 90px;
   font-size: 30px;
 }
 
 .show{
   height: 200px;
+}
+
+.delete{
+  position: absolute;
+  margin-left: 700px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background:#67c5ff ;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+.delete:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.delete a{
+  text-decoration: none;
+  color: white;
+}
+
+h4{
+  margin-left: 500px;
+  margin-top: 30px;
+  font-size: 30px;
 }
