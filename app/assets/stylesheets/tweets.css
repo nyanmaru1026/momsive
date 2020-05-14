@@ -167,7 +167,7 @@ h2{
 .contents-date-show{
   margin-left: 50px;
   color: gray;
-  margin-left: 480px;
+  margin-left: 900px;
   width: 100px;
 }
 
@@ -209,4 +209,27 @@ h4{
   margin-left: 500px;
   margin-top: 30px;
   font-size: 30px;
+}
+
+.edit{
+  position: absolute;
+  margin-left: 600px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background:#67c5ff ;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+.edit:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.edit a{
+  text-decoration: none;
+  color: white;
 }
