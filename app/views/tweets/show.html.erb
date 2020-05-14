@@ -1,0 +1,24 @@
+<div class = "contents-oya">
+    <div class = "contents-center">
+    <div class = "contents-name-date">
+      <div class = "contents-name-show">
+        <%= @tweet.name%>    
+      </div>
+      <div class = "contents-date-show">
+    <span data-livestamp="<%=@tweet.updated_at.strftime("%Y/%m/%d %H:%M %Z")%>"></span>
+      </div>
+    </div>
+      <div class = "contents-post-show">
+        <%= @tweet.text%>
+        <br>
+        <% if @tweet.image? %>
+        <%= image_tag @tweet.image.url, class: "show" %>
+        <% end %>
+      </div>
+    <div class = "contents-side">
+      <div class = "contents-side-left">
+      </div>
+      <div class = "contents-side-right">
+      </div>
+    </div>
+</div>

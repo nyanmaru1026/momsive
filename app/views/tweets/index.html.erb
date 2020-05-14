@@ -10,7 +10,11 @@
       </div>
     </div>
       <div class = "contents-post">
-        <%= tweet.text%>
+        <%= link_to tweet.text, tweet_path(tweet.id), class: "content__right__top--title" %>
+        <br>
+        <% if tweet.image? %>
+        <%= image_tag tweet.image.url %>
+        <% end %>
       </div>
     <div class = "contents-side">
       <div class = "contents-side-left">
