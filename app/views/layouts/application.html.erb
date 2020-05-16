@@ -20,6 +20,17 @@
         <div class = "header-upper-title">
           <%= link_to "Momsive", root_path%>
         </div>
+        <% if user_signed_in? %>
+          <div class="user">
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'out' %>
+            <%= link_to  "投稿する", "/tweets/new", class: "post" %>
+          </div>
+        <% else %>
+          <div class="user">
+            <%= link_to "ログイン", new_user_session_path, class: 'rog' %>
+            <%= link_to "新規登録", new_user_registration_path, class: 'post' %>
+          </div>
+        <% end %>
         <div class = "header-upper-post">
           <%= link_to "tweet", new_tweet_path %>
         </div>
