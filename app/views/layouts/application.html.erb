@@ -18,10 +18,15 @@
     <div class = "header">
       <div class = "header-upper">
         <div class = "header-upper-title">
+        <% if user_signed_in? %>
+        <%= link_to current_user.nickname, root_path %>
+        <% else %>
           <%= link_to "Momsive", root_path%>
+           <% end %>
         </div>
         <% if user_signed_in? %>
           <div class="user">
+            <%= link_to "マイページ", "/users/#{current_user.id}", class: "my" %>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'out' %>
             <%= link_to  "投稿する", "/tweets/new", class: "post" %>
           </div>

@@ -1,0 +1,28 @@
+
+
+  <% @tweets.each do |tweet| %>
+<div class = "contents-center2">
+<div class="name-index">
+  <p><%= @nickname %>さんの投稿一覧</p>
+  </div>
+    <div class = "contents-name-date">
+      <div class = "contents-name2">
+        <%= tweet.name%>    
+      </div>
+      <div class = "contents-date2">
+    <span data-livestamp="<%=tweet.updated_at.strftime("%Y/%m/%d %H:%M %Z")%>"></span>
+      </div>
+    </div>
+      <div class = "contents-post2">
+        <%= link_to tweet.text, tweet_path(tweet.id), class: "content__right__top--title" %>
+        <br>
+        <% if tweet.image? %>
+        <%= image_tag tweet.image.url %>
+        <% end %>
+      </div>
+    <div class = "contents-side">
+      <div class = "contents-side-left">
+      </div>
+      <div class = "contents-side-right">
+      </div>
+  <% end %>
