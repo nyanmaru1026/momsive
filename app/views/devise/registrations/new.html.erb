@@ -1,0 +1,41 @@
+  <div class="contents-center">
+    <div class = "sign_up">
+    <h1>Sign up</h1>
+    <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      <%= devise_error_messages! %>
+    </div>
+
+      <div class="field-0">
+        <%= f.label :nickname %> <em>(6 characters maximum)</em><br />
+        <%= f.text_field :nickname, autofocus: true, maxlength: "6" %>
+      </div>
+
+      <div class="field-1">
+        <%= f.label :email %><br />
+        <%= f.email_field :email %>
+      </div>
+
+      <div class="field-2">
+        <%= f.label :password %>
+        <% if @validatable %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="field-3">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up", class: "sign_btn" %>
+      </div>
+    <% end %>
+        <div class = "contents-side">
+      <div class = "contents-side-left">
+      </div>
+      <div class = "contents-side-right">
+      </div>
+    </div>
+</div>
