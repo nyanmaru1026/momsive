@@ -1,14 +1,10 @@
 
+<h5><%= @nickname%>さんの投稿</h1>
+<% @tweets.each do |tweet| %>
 
-  <% @tweets.each do |tweet| %>
-<div class = "contents-center2">
-<div class="name-index">
-  <p><%= @nickname %>さんの投稿一覧</p>
-  </div>
+<div class = "contents-oya">
+    <div class = "contents-center2">
     <div class = "contents-name-date">
-      <div class = "contents-name2">
-        <%= tweet.name%>    
-      </div>
       <div class = "contents-date2">
     <span data-livestamp="<%=tweet.updated_at.strftime("%Y/%m/%d %H:%M %Z")%>"></span>
       </div>
@@ -25,4 +21,6 @@
       </div>
       <div class = "contents-side-right">
       </div>
-  <% end %>
+    </div>
+</div>
+<% end %>
