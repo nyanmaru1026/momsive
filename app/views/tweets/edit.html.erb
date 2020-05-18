@@ -3,12 +3,7 @@
         <h3>
           Tweet-Edit
         </h3>
-        <%= form.file_field :image %>
-        <i class="far fa-image"></i>
-        <br>
-        <%= form.text_area :text, placeholder: "text" , rows: "10" %>
-        <br>
-        <%= form.submit "SEND", id: "submit" %>
+      <%= render partial: "form", locals: { form: form } %>
       <% end %>
    </div>
     <div class = "contents-side">
