@@ -394,3 +394,34 @@ h5{
   color: blue;
 }
 
+.container{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 300px;
+}
+
+.comments{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 400px;
+}
+
+#comment_text{
+  height: 40px;
+  width: 300px;
+}
+
+.comment_btn{
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.comment_btn:hover {
+  background: #67c5ff;
+  color: white;
+}
