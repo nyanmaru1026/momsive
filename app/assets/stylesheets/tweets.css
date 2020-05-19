@@ -42,6 +42,7 @@
   position: absolute;
   display: flex;
   margin-left: 220px;
+  margin-top: 40px;
 }
 
 .contents-name{
@@ -57,7 +58,7 @@
 .contents-post{
   position: absolute;
   margin-left: 220px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .contents-side{
@@ -422,6 +423,31 @@ h5{
 }
 
 .comment_btn:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+.search{
+  position: absolute;
+  margin-left: 220px;
+  margin-top: 10px;
+}
+
+#keyword{
+  height: 20px;
+}
+
+.search-btn{
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.search-btn:hover{
   background: #67c5ff;
   color: white;
 }
